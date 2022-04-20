@@ -45,7 +45,7 @@
 	},
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown",
-		"*.{js,css,md}": "prettier --write"
+		"*.{js,css,md,ts,tsx}": "prettier --write"
 	},
 	"husky": {
 		"hooks": {
