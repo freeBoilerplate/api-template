@@ -11,4 +11,3 @@ describe('Server Endpoints', () => {
 		expect(res.body.data).toEqual('pong')
 	})
 })
-//
