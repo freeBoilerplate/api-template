@@ -1,8 +1,8 @@
 ---
 name: "⭐ Suggest Feature"
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: "[Idea] Title of Idea"
+labels: "\U0001F4A1 Idea"
 assignees: ''
 
 ---
