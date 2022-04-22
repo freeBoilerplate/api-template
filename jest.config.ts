@@ -15,7 +15,20 @@ const config: Config.InitialOptions = {
 			statements: 80,
 		},
 	},
-	coveragePathIgnorePatterns: ['.model.ts', '/packages'],
-	modulePathIgnorePatterns: ['/dist', '/node_modules'],
+	coveragePathIgnorePatterns: [
+		'.model.ts',
+		'/scripts',
+		'/database',
+		'/routes',
+		'index.ts',
+		'startup.ts',
+	],
+	modulePathIgnorePatterns: [
+		'/dist',
+		'/node_modules',
+		'/database',
+		'/routes',
+		'/scripts',
+	],
 }
 export default config

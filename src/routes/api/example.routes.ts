@@ -1,14 +1,12 @@
 import { Request, Response, Router } from 'express'
 const router = Router()
 
-// Action Imports
-import getExample from './get.action'
+import * as ExampleLogic from '../../logic/example.logic'
 
-// Routing
 router.get('/', async (req: Request, res: Response) => {
-	const data: boolean = await getExample()
+	const data: any[] = await ExampleLogic.getExample()
 	if (data) {
-		res.status(200).json('Example')
+		res.status(200).json(data)
 	}
 })
 

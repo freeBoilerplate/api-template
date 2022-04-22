@@ -1,24 +1,53 @@
 import express from 'express'
+import dotenv = require('dotenv')
+import bodyParser = require('body-parser')
+import mongoose = require('mongoose')
+import morgan = require('morgan')
+import cors = require('cors')
+
+// Create App
 const app = express()
 
-// Initialize the env variables
-import dotenv = require('dotenv')
+// Initialize the environment
 dotenv.config()
 
-// Initialize the body parser
-import bodyParser = require('body-parser')
+// Check NODE_ENV
+const isProduction = process.env.NODE_ENV === 'production'
+
+// Express Config Defaults
+app.use(cors())
+app.use(morgan('dev'))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-// Check the server status endpoint
-app.get('/', (req, res) => {
-	res.json('Service up!')
-})
-
 // Setup API routing
-import Routes from './controllers/router'
-app.use('/api', Routes)
+import api from './routes/router'
+app.use('/api', api)
 
-import { startup } from './startup'
-if (process.env.NODE_ENV !== 'test') startup(app)
+// Model Initialization
+/* tslint:disable no-var-requires */
+require('./database/example.database')
+
+// Find Port
+const port = process.env.PORT || 8000
+
+// Initialize MongoDB Connection
+const mongoString = process.env.MONGO_CONNECTION_STRING
+if (mongoString) {
+	mongoose.connect(mongoString)
+	const db = mongoose.connection
+	db.once('connected', () => {
+		console.log('Database Connected')
+	})
+} else {
+	console.log(
+		'Looks like you are missing a MongoDB connection string in your .env!'
+	)
+}
+
+// Service Connection
+app.listen(port, () => {
+	console.log(`App listening on port: ${port}`)
+})
 
 module.exports = app
