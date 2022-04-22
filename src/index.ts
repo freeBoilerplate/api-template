@@ -33,11 +33,17 @@ const port = process.env.PORT || 8000
 
 // Initialize MongoDB Connection
 const mongoString = process.env.MONGO_CONNECTION_STRING
-mongoose.connect(mongoString)
-const db = mongoose.connection
-db.once('connected', () => {
-	console.log('Database Connected')
-})
+if (mongoString) {
+	mongoose.connect(mongoString)
+	const db = mongoose.connection
+	db.once('connected', () => {
+		console.log('Database Connected')
+	})
+} else {
+	console.log(
+		'Looks like you are missing a MongoDB connection string in your .env!'
+	)
+}
 
 // Service Connection
 app.listen(port, () => {
