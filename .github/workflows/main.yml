@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PORT: 8000
-            MONGO_CONNECTION_STRING: mockURL
+            MONGO_CONNECTION_STRING: mongodb://mockURL
         steps:
             - uses: actions/checkout@v2
             - name: Install modules
