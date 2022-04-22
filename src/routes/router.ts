@@ -2,9 +2,9 @@ import { Router } from 'express'
 const router = Router()
 
 // Router Imports
-import exampleRouter from './example/example.routing'
+import ExampleRouter from './api/example.routes'
 
 // Router Utilizations
-router.use('/example', exampleRouter)
+router.use('/example', ExampleRouter)
 
 export default router
