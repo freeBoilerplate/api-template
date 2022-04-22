@@ -1,6 +1,9 @@
 import express from 'express'
 const app = express()
-const port: number = 8000
+
+// Initialize the env variables
+import dotenv = require('dotenv')
+dotenv.config()
 
 // Initialize the body parser
 import bodyParser = require('body-parser')
@@ -15,10 +18,7 @@ app.get('/', (req, res) => {
 import Routes from './controllers/router'
 app.use('/api', Routes)
 
-// Setup server
-if (process.env.NODE_ENV != 'test')
-	app.listen(port, () => {
-		console.log(`App listening on port: ${port}`)
-	})
+import { startup } from './startup'
+if (process.env.NODE_ENV !== 'test') startup(app)
 
 module.exports = app

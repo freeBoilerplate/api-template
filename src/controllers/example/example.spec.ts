@@ -1,5 +1,5 @@
-const server = require('../../app')
-const supertest = require('supertest')
+import server = require('../../index')
+import supertest = require('supertest')
 const requestWithSupertest = supertest(server)
 
 describe('Server Endpoints', () => {
@@ -7,7 +7,6 @@ describe('Server Endpoints', () => {
 		const res = await requestWithSupertest.get('/api/example')
 		expect(res.status).toEqual(200)
 		expect(res.type).toEqual(expect.stringContaining('application/json'))
-		console.log(res.body)
 		expect(res.body).toEqual('Example')
 	})
 })

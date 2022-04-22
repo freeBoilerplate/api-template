@@ -6,7 +6,7 @@ import getExample from './get.action'
 
 // Routing
 router.get('/', async (req: Request, res: Response) => {
-	const data = await getExample()
+	const data: boolean = await getExample()
 	if (data) {
 		res.status(200).json('Example')
 	}
