@@ -1,5 +1,13 @@
-## The Fableverse Open-Source API Template
-Our template for Express and TypeScript based Services.
+<div align="center">
+  <h3> The Fableverse Open-Source API Template </h3>
+  <a href="https://discord.gg/5a9bSRyYyF"
+    ><img
+      src="https://img.shields.io/discord/966144993163091988?label=discord&logoColor=white&style=flat-square"
+      alt="Chat on Discord"
+  /></a>
+  <h4> Our template for Express and TypeScript based Services. </h4>
+  
+</div>
 
 ## 📖 Table of Contents
 
@@ -14,6 +22,7 @@ Our template for Express and TypeScript based Services.
 
 
 ## 🤝 Contributing
+
 
 ## 📝 License
 Copyright © 2022 Fableverse
