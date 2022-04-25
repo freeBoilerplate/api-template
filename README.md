@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/34040658/165009852-2248edab-7b6e-42a7-b59a-2a503b2a62b5.png" />
-  <h4> Our template for Express and TypeScript based Services. </h4>
+  <img src="https://user-images.githubusercontent.com/34040658/165145382-873ec3b5-f436-477a-8d73-557575d502de.png" />
+  <h4> A template for Express and TypeScript based Services. </h4>
   
   <a href="https://github.com/Fableverse/api-template/releases"
     ><img
@@ -33,17 +33,28 @@
 ## 📖 Table of Contents
 - [Features](#-features)
 - [Quick Setup Guide](#-quick-setup-guide)
+- [Projects using this Template](#-projects-using-this-template)
 - [Reporting a Bug or Issue](#-reporting-a-bug-or-issue)
 - [Contributing](#-contributing)
 - [License](#-license)
 
 ## 💡 Features
-The goal of this template was to make it easier to build and prototype services, without needing to standup the structure and foundation, which tends to be the same accross many projects. So, this is eliminating some overhead and setting a standard for services that are built using this template. Here is a list of things included in this template.
+The goal of this template was to make it easier to build and prototype services, without needing to standup the structure and foundation, which tends to be the same accross many projects. So, this is eliminating some overhead and setting a standard for services that are built using this template. Here is a list of things included.
 - GitHub actions that run jest tests on every commit
-- Husky pre-commits and linting, using conventional commits
-- An example endpoint, that shows off the flow and structure, and includes mongoose
+- [Husky](https://typicode.github.io/husky/#/) pre-commits and linting, using conventional commits
+- An example endpoint, that shows off the flow and structure, and includes use of [Mongoose](https://mongoosejs.com/)
 - GitHub PR & issue templates all built into the repository
 - Prettier all configured and easily interchangable
+
+### What is Husky and why use it?
+Whenever you commit or push code up, we want to make sure we follow a standard and that it's **enforced**. Husky provides us that ability and by giving it a standard (in this case, conventional commits), it won't let you commit and push up code unless you follow that standard. 
+
+Check out the [Conventional Commit Standard](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### What is Mongoose and why use it?
+Mongoose provides us an easy way to interact with MongoDB with express apps. It provides a lot of features out of the box. It's pretty standard with Express Apps + MongoDB to use mongoose to interact with the database.
+
+Check out the [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
 
 ## 🚀 Quick Setup Guide
 ### Prerequisites
@@ -83,11 +94,14 @@ To run the jest tests in the project, run:
 npm test
 ```
 
-## 📞 Reporting a Bug or Issue
+## 🏠 Projects using this template
+None at the moment.
 
+## 📞 Reporting a Bug or Issue
+To be determined.
 
 ## 🤝 Contributing
-
+Reference contributing guide, once complete
 
 ## 📝 License
 Copyright © 2022 Fableverse
