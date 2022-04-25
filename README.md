@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> The Fableverse Open-Source API Template </h1>
+  <img src="https://user-images.githubusercontent.com/34040658/165009852-2248edab-7b6e-42a7-b59a-2a503b2a62b5.png" />
   <h4> Our template for Express and TypeScript based Services. </h4>
   <a href="https://github.com/Fableverse/api-template/releases"
     ><img
@@ -25,9 +25,13 @@
 </div>
 
 ## 📖 Table of Contents
+- [Features](#-features)
+- [Quick Setup Guide](#-quick-setup-guide)
+- [Reporting Security Issues](#-reporting-security-issues-and-responsible-disclosure)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-
-## 💡 Features of this Template
+## 💡 Features
 
 
 ## 🚀 Quick Setup Guide
