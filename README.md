@@ -40,11 +40,11 @@
 
 ## 💡 Features
 The goal of this template was to make it easier to build and prototype services, without needing to standup the structure and foundation, which tends to be the same accross many projects. So, this is eliminating some overhead and setting a standard for services that are built using this template. Here is a list of things included.
-- GitHub actions that run jest tests on every commit
+- GitHub actions that run [Jest](https://jestjs.io/) tests on every commit
 - [Husky](https://typicode.github.io/husky/#/) pre-commits and linting, using conventional commits
 - An example endpoint, that shows off the flow and structure, and includes use of [Mongoose](https://mongoosejs.com/)
 - GitHub PR & issue templates all built into the repository
-- Prettier all configured and easily interchangable
+- [Prettier](https://prettier.io/) all configured and easily interchangable
 
 ### What is Husky and why use it?
 Whenever you commit or push code up, we want to make sure we follow a standard and that it's **enforced**. Husky provides us that ability and by giving it a standard (in this case, conventional commits), it won't let you commit and push up code unless you follow that standard. 
@@ -58,6 +58,10 @@ Check out the [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
 
 ## 🚀 Quick Setup Guide
 ### Prerequisites
+- [NodeJS](https://nodejs.org/en/) (preferably the latest), to run the project and install dependencies
+- An IDE, like [VSCode](https://code.visualstudio.com/), for editing code
+- [Git](https://gitforwindows.org/), for cloning and interacting from GitHub
+- (Optional) A MongoDB database, either locally or in the cloud. For local, [MongoDB Compass](https://www.mongodb.com/products/compass) works great.
 
 ### Setup
 Clone the project from Github, locally using 
