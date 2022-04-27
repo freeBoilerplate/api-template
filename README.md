@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/34040658/165145382-873ec3b5-f436-477a-8d73-557575d502de.png" />
+  <img src="https://user-images.githubusercontent.com/34040658/165447411-92f787dd-051b-43d6-98b5-55fbc885955f.png" />
   <h4> A template for Express and TypeScript based Services. </h4>
   
   <a href="https://github.com/Fableverse/api-template/releases"
@@ -32,6 +32,7 @@
 
 ## 📖 Table of Contents
 - [Features](#-features)
+- [Packages](#-packages)
 - [Quick Setup Guide](#-quick-setup-guide)
 - [Projects using this Template](#-projects-using-this-template)
 - [Reporting a Bug or Issue](#-reporting-a-bug-or-issue)
@@ -55,6 +56,25 @@ Check out the [Conventional Commit Standard](https://www.conventionalcommits.org
 Mongoose provides us an easy way to interact with MongoDB with express apps. It provides a lot of features out of the box. It's pretty standard with Express Apps + MongoDB to use mongoose to interact with the database.
 
 Check out the [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
+
+## 📦 Packages
+Jest [ [Website]() | [Docs]() ]: Unit testing 
+
+Prettier [ [Website]() | [Docs]() ]:  Cleaning up code and standardizing it
+
+Mongoose [ [Website]() | [Docs]() ]:  Interaction with MongoDB
+
+Dotenv [ [Website]() | [Docs]() ]:  Access environmental variables
+
+Express [ [Website]() | [Docs]() ]:  A flexible Node framework
+
+Husky [ [Website]() | [Docs]() ]:  Helps with code standardization
+
+Body-Parser [ [Website]() | [Docs]() ]:  Body parsing middleware
+
+Morgan [ [Website]() | [Docs]() ]:  Endpoint logging
+
+Cors [ [Website]() | [Docs]() ]:  Cross-origin resource sharing
 
 ## 🚀 Quick Setup Guide
 ### Prerequisites
