@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/34040658/165854464-9bed2d7c-5327-4571-94a4-3d71eb30c4d6.png" />
+  <img src="https://user-images.githubusercontent.com/34040658/165856526-25ad1126-2ef2-445b-b535-b8976d6cfabe.png" />
   <h4> A template for Express and TypeScript based Services. </h4>
   
   <a href="https://github.com/Fableverse/api-template/releases"
