@@ -58,23 +58,18 @@ Mongoose provides us an easy way to interact with MongoDB with express apps. It 
 Check out the [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
 
 ## 📦 Packages
-Jest [ [Website]() | [Docs]() ]: Unit testing 
 
-Prettier [ [Website]() | [Docs]() ]:  Cleaning up code and standardizing it
-
-Mongoose [ [Website]() | [Docs]() ]:  Interaction with MongoDB
-
-Dotenv [ [Website]() | [Docs]() ]:  Access environmental variables
-
-Express [ [Website]() | [Docs]() ]:  A flexible Node framework
-
-Husky [ [Website]() | [Docs]() ]:  Helps with code standardization
-
-Body-Parser [ [Website]() | [Docs]() ]:  Body parsing middleware
-
-Morgan [ [Website]() | [Docs]() ]:  Endpoint logging
-
-Cors [ [Website]() | [Docs]() ]:  Cross-origin resource sharing
+| Package         | Description                           | Links          |
+| --------------- | ------------------------------------- | -------------- |
+| Jest            | Unit Testing                          | [Website](), [Docs]() |
+| Prettier        | Cleaning up code and standardizing it | [Website](), [Docs]() |
+| Mongoose        | Interaction with MongoDB              | [Website](), [Docs]() |
+| Dotenv          | Access environmental variables        | [Website](), [Docs]() |
+| Express         | A flexible Node framework             | [Website](), [Docs]() |
+| Husky           | Helps with code standardization       | [Website](), [Docs]() |
+| Body-Parser     | Body parsing middleware               | [Website](), [Docs]() |
+| Morgan          | Endpoint logging                      | [Website](), [Docs]() |
+| Cors            | Cross-origin resource sharing         | [Website](), [Docs]() |
 
 ## 🚀 Quick Setup Guide
 ### Prerequisites
