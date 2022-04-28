@@ -114,13 +114,15 @@ npm test
 ```
 
 ## 🏠 Projects using this template
-None at the moment.
+Will be updated, once projects are built.
 
 ## 📞 Reporting a Bug or Issue
-To be determined.
+Create a new [Issue](https://github.com/Fableverse/api-template/issues) directly in this repository utilizing the "Bug Report" template.
 
 ## 🤝 Contributing
-Reference contributing guide, once complete
+Please reference the [Code of Conduct](https://github.com/Fableverse/api-template/blob/main/CODE_OF_CONDUCT.md) for this repository.
+
+When you are looking to contribute new code, you will want to create a fork for the changes, and than create a pull request into the original repository. More information on that process can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
 ## 📝 License
 Copyright © 2022 Fableverse
