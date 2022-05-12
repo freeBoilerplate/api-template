@@ -52,6 +52,7 @@ The goal of this template was to make it easier to build and prototype services,
 -   An example endpoint, that shows off the flow and structure, and includes use of [Mongoose](https://mongoosejs.com/)
 -   GitHub PR & issue templates all built into the repository
 -   [Prettier](https://prettier.io/) all configured and easily interchangable
+-   [Swagger](https://swagger.io/) setup and configured for easy documentation and testing
 
 ### What is Husky and why use it?
 
@@ -78,6 +79,7 @@ Check out the [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
 | Body-Parser | Body parsing middleware               | [Website](), [Docs]() |
 | Morgan      | Endpoint logging                      | [Website](), [Docs]() |
 | Cors        | Cross-origin resource sharing         | [Website](), [Docs]() |
+| Swagger     | Documentation and Testing Endpoints   | [Website](), [Docs]() |
 
 ## 🚀 Quick Setup Guide
 
