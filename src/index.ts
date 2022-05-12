@@ -5,6 +5,10 @@ import mongoose = require('mongoose')
 import morgan = require('morgan')
 import cors = require('cors')
 
+// Adds Swagger
+import swaggerUi = require('swagger-ui-express')
+import swaggerDocument from './swagger.json'
+
 // Create App
 const app = express()
 
@@ -19,6 +23,11 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+// Setup Swagger Route
+if (!isProduction) {
+	app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+}
 
 // Setup API routing
 import api from './routes/router'
