@@ -22,6 +22,7 @@ const config: Config.InitialOptions = {
 		'/routes',
 		'index.ts',
 		'startup.ts',
+		'.json',
 	],
 	modulePathIgnorePatterns: [
 		'/dist',
