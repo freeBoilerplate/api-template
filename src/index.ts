@@ -38,7 +38,8 @@ app.use('/api', api)
 require('./database/example.database')
 
 // Find Port
-const port = process.env.PORT || 8000
+const port = 8000
+const host = '0.0.0.0'
 
 // Initialize MongoDB Connection
 const mongoString = process.env.MONGO_CONNECTION_STRING
@@ -55,7 +56,7 @@ if (mongoString) {
 }
 
 // Service Connection
-app.listen(port, () => {
+app.listen(port, host, () => {
 	console.log(`App listening on port: ${port}`)
 })
 
